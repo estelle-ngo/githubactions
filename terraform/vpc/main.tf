@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "estelle2-bucket"  # Use a globally unique name
+    bucket         = "estelle-terraformbucket"  # Use a globally unique name
     key            = "vpcactions/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
